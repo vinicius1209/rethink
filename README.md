@@ -1,10 +1,4 @@
-### Descrição dos principais arquivos
-  - js/grafosLib.js -> Algoritmos e implantação do grafo
-  - js/grafosButton.js -> Comunicação entre index.html e grafosLib.js
-  - js/canvas.js -> Implementção do desenho do grafo em canvas
-  - index.html -> Interface gráfica para utilização do projeto
-  
-##### INSERÇÃO NA TABELA PRODUTOS
+ ##### INSERÇÃO NA TABELA PRODUTOS
 
 - Caso não seja definido um primary key, o rethink irá criar uma automaticamente
 
