@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/epoch/0.6.0/epoch.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.5.2/polymer.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/conexao.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/epoch/0.6.0/epoch.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,400">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body class="epoch-theme-dark">
+
+   
+	<h1>Saldo Geral</h1>
+
+    <div class="epoch category20" id="chart_saldo_geral" style="width: 600px; height: 200px;"></div>
+    <template id="saldoGeral" is="auto-binding"></template>
+	
+	<h1>Status do Servidor</h1>
+
+    <div class="epoch category20" id="chart_servidor_status" style="width: 600px; height: 200px;"></div>
+    <template id="statusServidor" is="auto-binding">
+	    <ul class="stats">
+        <li>Clients: {{stats.clients_active}}/{{stats.client_connections}}</li>
+		<li>Leitura/Gravação: {{stats.read_docs_total}}/{{stats.written_docs_total}}</li>
+		<li>Consultas/Seg: {{stats.queries_per_sec}}</li>		
+      </ul>
+    </template>
+	
+  </body>
+</html>
